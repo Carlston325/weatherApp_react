@@ -6,24 +6,31 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.19.2",
+    "axios": "^1.7.2",
+    "node-geocoder": "^4.3.0",
+    "querystring-es3": "^0.2.1",
     "react": "^16.13.1",
     "react-animated-weather": "^4.0.1",
     "react-dom": "^16.13.1",
     "react-geolocated": "^3.0.1",
-    "react-live-clock": "^4.0.5",
-    "react-scripts": "3.4.1",
+    "react-live-clock": "^6.1.22",
+    "react-scripts": "^3.0.1",
     "react-skycons": "^0.7.0",
-    "skycons": "^1.0.0"
+    "skycons": "^1.0.0",
+    "uti": "^8.6.1",
+    "util": "^0.12.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
